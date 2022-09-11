@@ -1,34 +1,14 @@
+import { For } from 'solid-js';
+import projects from '~/data/projects.json';
+import ProjectLink from './ProjectLink';
+
 export default function ProjectsSection() {
   return (
-    <div class="section">
+    <div class="section projects">
       <div class="section-title">Projects</div>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, officiis commodi soluta a veniam beatae suscipit repellendus expedita. Molestiae veritatis minima vero optio ipsam quasi animi maxime deserunt, et in.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, officiis commodi soluta a veniam beatae suscipit repellendus expedita. Molestiae veritatis minima vero optio ipsam quasi animi maxime deserunt, et in.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, officiis commodi soluta a veniam beatae suscipit repellendus expedita. Molestiae veritatis minima vero optio ipsam quasi animi maxime deserunt, et in.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, officiis commodi soluta a veniam beatae suscipit repellendus expedita. Molestiae veritatis minima vero optio ipsam quasi animi maxime deserunt, et in.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, officiis commodi soluta a veniam beatae suscipit repellendus expedita. Molestiae veritatis minima vero optio ipsam quasi animi maxime deserunt, et in.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, officiis commodi soluta a veniam beatae suscipit repellendus expedita. Molestiae veritatis minima vero optio ipsam quasi animi maxime deserunt, et in.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, officiis commodi soluta a veniam beatae suscipit repellendus expedita. Molestiae veritatis minima vero optio ipsam quasi animi maxime deserunt, et in.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, officiis commodi soluta a veniam beatae suscipit repellendus expedita. Molestiae veritatis minima vero optio ipsam quasi animi maxime deserunt, et in.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, officiis commodi soluta a veniam beatae suscipit repellendus expedita. Molestiae veritatis minima vero optio ipsam quasi animi maxime deserunt, et in.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, officiis commodi soluta a veniam beatae suscipit repellendus expedita. Molestiae veritatis minima vero optio ipsam quasi animi maxime deserunt, et in.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, officiis commodi soluta a veniam beatae suscipit repellendus expedita. Molestiae veritatis minima vero optio ipsam quasi animi maxime deserunt, et in.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, officiis commodi soluta a veniam beatae suscipit repellendus expedita. Molestiae veritatis minima vero optio ipsam quasi animi maxime deserunt, et in.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, officiis commodi soluta a veniam beatae suscipit repellendus expedita. Molestiae veritatis minima vero optio ipsam quasi animi maxime deserunt, et in.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, officiis commodi soluta a veniam beatae suscipit repellendus expedita. Molestiae veritatis minima vero optio ipsam quasi animi maxime deserunt, et in.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, officiis commodi soluta a veniam beatae suscipit repellendus expedita. Molestiae veritatis minima vero optio ipsam quasi animi maxime deserunt, et in.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, officiis commodi soluta a veniam beatae suscipit repellendus expedita. Molestiae veritatis minima vero optio ipsam quasi animi maxime deserunt, et in.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, officiis commodi soluta a veniam beatae suscipit repellendus expedita. Molestiae veritatis minima vero optio ipsam quasi animi maxime deserunt, et in.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, officiis commodi soluta a veniam beatae suscipit repellendus expedita. Molestiae veritatis minima vero optio ipsam quasi animi maxime deserunt, et in.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, officiis commodi soluta a veniam beatae suscipit repellendus expedita. Molestiae veritatis minima vero optio ipsam quasi animi maxime deserunt, et in.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, officiis commodi soluta a veniam beatae suscipit repellendus expedita. Molestiae veritatis minima vero optio ipsam quasi animi maxime deserunt, et in.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, officiis commodi soluta a veniam beatae suscipit repellendus expedita. Molestiae veritatis minima vero optio ipsam quasi animi maxime deserunt, et in.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, officiis commodi soluta a veniam beatae suscipit repellendus expedita. Molestiae veritatis minima vero optio ipsam quasi animi maxime deserunt, et in.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, officiis commodi soluta a veniam beatae suscipit repellendus expedita. Molestiae veritatis minima vero optio ipsam quasi animi maxime deserunt, et in.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, officiis commodi soluta a veniam beatae suscipit repellendus expedita. Molestiae veritatis minima vero optio ipsam quasi animi maxime deserunt, et in.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, officiis commodi soluta a veniam beatae suscipit repellendus expedita. Molestiae veritatis minima vero optio ipsam quasi animi maxime deserunt, et in.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, officiis commodi soluta a veniam beatae suscipit repellendus expedita. Molestiae veritatis minima vero optio ipsam quasi animi maxime deserunt, et in.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, officiis commodi soluta a veniam beatae suscipit repellendus expedita. Molestiae veritatis minima vero optio ipsam quasi animi maxime deserunt, et in.
+      <div class="links">
+        <For each={projects}>{(project) => <ProjectLink project={project} />}</For>
+      </div>
     </div>
   );
 }

@@ -7,7 +7,7 @@ export default function TitleSection(props: any) {
     // Increase opacity on scroll
     window.addEventListener('scroll', () => {
       const scroll = window.scrollY;
-      const maxScroll = 0.3 * window.innerHeight;
+      const maxScroll = 0.5 * window.innerHeight;
       const newOpacity = scroll / maxScroll;
 
       setOpacity(newOpacity);

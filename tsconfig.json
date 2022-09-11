@@ -5,6 +5,7 @@
     "target": "ESNext",
     "module": "ESNext",
     "moduleResolution": "node",
+    "resolveJsonModule": true,
     "jsxImportSource": "solid-js",
     "jsx": "preserve",
     "types": ["vite/client"],
