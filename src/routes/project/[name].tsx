@@ -1,4 +1,3 @@
-import { Show } from 'solid-js';
 import { RouteDataArgs, useRouteData } from 'solid-start';
 import projects from '~/data/projects.json';
 import NotFound from '../[...404]';
