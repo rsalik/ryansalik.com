@@ -1,6 +1,8 @@
 {
   "name": "ryansalik",
   "scripts": {
+    "predeploy": "yarn build && echo ryansalik.com > ./dist/public/CNAME",
+    "deploy": "npx gh-pages -d dist/public",
     "dev": "solid-start dev",
     "build": "solid-start build",
     "start": "solid-start start"
