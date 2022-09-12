@@ -1,18 +1,25 @@
 [
   {
     "name": "Exogram",
-    "linkImage": "exogram-charts"
+    "linkImage": "exogram-charts",
+    "coverImage": "exogram-table",
+    "description": "Exogram is a web application developed to aid NASA's Planet Patrol project in the search for exoplanets and other objects of interest from the TESS mission. Written in React, the application allows users to search for, comment on, share, and generate light curves for thousands of TESS targets.",
+    "webLink": "https://exogram.vercel.app",
+    "repoLink": "https://www.github.com/rsalik/exogram"
   },
   {
     "name": "Typeracer++",
-    "linkImage": "typeracer"
+    "linkImage": "typeracer",
+    "coverImage": "typeracer"
   },
   {
     "name": "BombParty",
-    "linkImage": "bombparty-turn"
+    "linkImage": "bombparty-turn",
+    "coverImage": "bombparty"
   },
   {
     "name": "Staples WTP",
-    "linkImage": "wtp"
+    "linkImage": "wtp",
+    "coverImage": "wtp-u3"
   }
 ]

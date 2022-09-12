@@ -1,0 +1,60 @@
+.section.project
+  background-size: cover
+
+  flex-direction: row
+  justify-content: center
+
+  max-width: 100%
+
+  .text
+    height: 70%
+    padding: 0 2em
+
+    text-align: left
+
+    font-size: 1.35em
+
+    .project-title
+      font-size: 7rem
+      font-weight: 700
+
+      margin-bottom: 1rem
+
+      @include gradient-text()
+
+    .description
+      margin-bottom: 1rem
+
+    .link
+      display: flex
+      align-items: center
+
+      border: 2px solid $color
+      border-radius: $border-radius
+
+      margin: .5em 0
+
+      padding: .5em 1em
+
+      transition: background .2s ease-in-out, color .2s ease-in-out
+
+      &:hover
+        background: $color
+        color: $bkg
+
+      &.web
+        color: $primary
+        border-color: $primary
+
+        &:hover
+          background: $primary
+          color: $bkg
+
+      span
+        margin-left: 1rem
+        font-size: 1.5em
+
+  img
+    width: 800px
+
+    border-radius: $border-radius
