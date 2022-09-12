@@ -37,8 +37,17 @@ export default function Project() {
           <Show when={project.webLink !== undefined}>
             <a href={project.webLink} target="_blank" rel="noreferrer" class="link web">
               <Fa size="1.5x" icon={faGlobe} />
-              <span>View</span>
+              <span>
+                <Show when={!project.webLink.includes("ryansalik.com")} fallback={"You're already here"}>
+                  View
+                </Show>
+              </span>
             </a>
+            <Show when={project.webLink.includes('herokuapp')}>
+              <div class="heroku-warning">
+                <span>Heroku apps may take a minute to load</span>
+              </div>
+            </Show>
           </Show>
         </div>
         <img src={`../imgs/${project.coverImage}.png`} />
