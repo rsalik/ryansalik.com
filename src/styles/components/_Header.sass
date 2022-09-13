@@ -10,13 +10,20 @@ header
   display: flex
   align-items: center
 
-  padding: 0 2em
+  padding: 0 2rem
   background: $darkbkg
 
   box-sizing: border-box
+  font-size: 3em
+  font-weight: $fw-bold
 
-  .title
-    font-size: 3em
-    font-weight: 700
+  .path
+    color: mix($color, $bkg, 40%)
 
-    margin-right: auto
+    font-weight: $fw-semibold
+
+    text-transform: lowercase
+
+    .path-separator
+      margin: 0 1rem
+      color: mix($color, $bkg, 20%)
