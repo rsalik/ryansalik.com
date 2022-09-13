@@ -1,4 +1,5 @@
 import { Title } from 'solid-start';
+import ContactSection from '~/components/ContactSection';
 import ProjectsSection from '~/components/ProjectsSection';
 import TitlePageContentWrapper from '~/components/TitlePageContentWrapper';
 import TitleSection from '~/components/TitleSection';
@@ -10,6 +11,7 @@ export default function Home() {
       <TitleSection />
       <TitlePageContentWrapper>
         <ProjectsSection />
+        <ContactSection />
       </TitlePageContentWrapper>
     </main>
   );

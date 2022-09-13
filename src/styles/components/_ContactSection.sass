@@ -1,0 +1,29 @@
+.contact.section
+  .links
+    display: flex
+    width: 100%
+    align-content: flex-start
+    flex-direction: column
+
+    .link
+      font-size: 3em
+
+      padding: 1.5rem
+      margin: .2rem 0
+
+      align-items: center
+
+      box-sizing: border-box
+
+      border: 3px solid $color
+      border-radius: $border-radius
+
+      transition: background .2s ease-in-out, color .2s ease-in-out
+
+      &:hover
+        background: $color
+        color: $bkg
+
+      .value
+        font-weight: 700
+        margin-left: 1rem
