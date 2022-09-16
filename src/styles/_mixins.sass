@@ -2,3 +2,9 @@
   background: $gradient
   -webkit-background-clip: text
   -webkit-text-fill-color: transparent
+
+@mixin border-radius()
+  border-radius: $border-radius
+
+  @media screen and (max-width: $mobile)
+    border-radius: $border-radius-mobile

@@ -1,4 +1,6 @@
 .title-content
+  @include border-radius()
+
   background: $bkg
   padding: 3em 2em
 
@@ -11,14 +13,22 @@
   border-top-right-radius: $border-radius
   border-top-left-radius: $border-radius
 
-  border-radius: $border-radius
-
   z-index: 100
 
   .section
     background: $darkbkg
-    border-radius: $border-radius
+    @include border-radius()
 
 .section.empty
   background: none
   height: 100%
+
+@media screen and (max-width: $mobile)
+  .section.empty
+    display: none
+
+  .title-content
+    padding: 0
+
+    .section
+      background: $bkg

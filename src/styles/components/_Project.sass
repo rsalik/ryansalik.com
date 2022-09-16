@@ -26,11 +26,12 @@
       margin-bottom: 1rem
 
     .link
+      @include border-radius()
+
       display: flex
       align-items: center
 
       border: 2px solid $color
-      border-radius: $border-radius
 
       margin: .5em 0
 
@@ -55,15 +56,31 @@
         font-size: 1.5em
 
     .heroku-warning
+      @include border-radius()
+
       background: $primary
       color: $bkg
 
       text-align: center
-      border-radius: $border-radius
 
       padding: .5em 1em
 
   img
+    @include border-radius()
+
     width: 800px
 
-    border-radius: $border-radius
+@media screen and (max-width: $mobile)
+  .section.project
+    flex-direction: column-reverse
+
+    .text
+      font-size: 1.2rem
+      padding: 0 .5rem
+
+      .project-title
+        font-size: 3rem
+
+    img
+      width: 100%
+      margin-bottom: .5rem

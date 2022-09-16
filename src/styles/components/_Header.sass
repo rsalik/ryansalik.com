@@ -27,3 +27,11 @@ header
     .path-separator
       margin: 0 1rem
       color: mix($color, $bkg, 20%)
+
+@media screen and (max-width: $mobile)
+  header
+    top: 0 !important
+    position: sticky !important
+
+  .path
+    display: none
