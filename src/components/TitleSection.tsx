@@ -1,4 +1,5 @@
 import { createSignal, onMount } from 'solid-js';
+import TitleCanvas from './TitleCanvas';
 
 export default function TitleSection(props: any) {
   const [opacity, setOpacity] = createSignal(0);
@@ -16,6 +17,7 @@ export default function TitleSection(props: any) {
 
   return (
     <div class="title-wrapper" ref={props.ref}>
+      <TitleCanvas />
       <div class="section title" style={{ opacity: 1 - opacity() }}>
         <div class="text">Ryan Salik</div>
       </div>

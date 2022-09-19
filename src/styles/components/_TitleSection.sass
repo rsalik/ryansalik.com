@@ -19,7 +19,8 @@
 
     height: 100%
 
-    background: $darkbkg
+    //background: $darkbkg
+    background: none
 
     .text
       font-size: 10em
@@ -30,16 +31,22 @@
 
   .title
     background-attachment: fixed
-    background: $gradient
+    //background: $gradient
+    background: none
 
     .text
-      color: $bkg
+      color: $darkbkg
 
   .title-invert
+    background: $darkbkg
+
     .text
       background: $gradient
       -webkit-background-clip: text
       -webkit-text-fill-color: transparent
+  canvas
+    width: 100vw
+    background: #000
 
 @media screen and (max-width: $mobile)
   .title-wrapper
