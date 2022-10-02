@@ -38,7 +38,10 @@ export default function Project() {
             <a href={project.webLink} target="_blank" rel="noreferrer" class="link web">
               <Fa size="1.5x" icon={faGlobe} />
               <span>
-                <Show when={!project.webLink.includes("ryansalik.com")} fallback={"You're already here"}>
+                <Show
+                  when={!project.webLink.includes('ryansalik.com') || project.webLink.includes('concurrently')}
+                  fallback={"You're already here"}
+                >
                   View
                 </Show>
               </span>
