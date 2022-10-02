@@ -15,7 +15,7 @@
     font-size: 1.35em
 
     .project-title
-      font-size: 5rem
+      font-size: 4rem
       font-weight: $fw-semibold
 
       margin-bottom: .4rem
@@ -68,7 +68,9 @@
   img
     @include border-radius()
 
-    width: 800px
+    max-width: 650px
+    max-height: 500px
+    object-fit: cover
 
 @media screen and (max-width: $mobile)
   .section.project

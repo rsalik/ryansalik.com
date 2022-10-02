@@ -8,6 +8,14 @@
     "repoLink": "https://www.github.com/rsalik/exogram"
   },
   {
+    "name": "The Concurrently",
+    "linkImage": "concurrently",
+    "coverImage": "concurrently-post",
+    "description": "The Concurrently is a blog created with SvelteKit and hosted on Vercel.",
+    "webLink": "https://concurrently.ryansalik.com",
+    "repoLink": "https://www.github.com/rsalik/concurrently-blog"
+  },
+  {
     "name": "Geoguessr",
     "linkImage": "geoguessr",
     "coverImage": "geoguessr-countries",
@@ -46,5 +54,13 @@
     "description": "The website you're on right now! Written in SolidJS and hosted by Vercel.",
     "repoLink": "https://github.com/rsalik/ryansalik.com",
     "webLink": "https://ryansalik.com"
+  },
+  {
+    "name": "Super Mario Maker",
+    "linkImage": "mario-maker",
+    "coverImage": "mario-maker-game",
+    "description": "A (very mediocre) recreation of Super Mario Maker game, where you can build, play, and share platforming levels. Written in pure JavaScript and Node.js.",
+    "webLink": "https://smmweb.herokuapp.com/",
+    "repoLink": "https://github.com/rsalik/Super-Mario-Maker"
   }
 ]

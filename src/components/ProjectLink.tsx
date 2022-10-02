@@ -1,4 +1,3 @@
-import { lazy } from 'solid-js';
 import projects from '~/data/projects.json';
 
 export default function ProjectLink(props: { project: typeof projects[0] }) {
